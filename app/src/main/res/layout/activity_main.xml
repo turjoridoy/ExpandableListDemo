@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/filter_dialog_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvdepart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Department" />
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="category"/>
+                <TextView
+                    android:id="@+id/tvSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="size"/>
+
+                <TextView
+                    android:id="@+id/tvminprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Price" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
+
+
+        <ExpandableListView
+            android:id="@+id/lvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:childDivider="@color/colorBlack"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0.7"
+                android:background="@color/colorAccent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Reset"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btnFilter"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/btnAddCart"
+                android:layout_weight="0.3"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/btnShareWhatsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="Apply Filters"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
